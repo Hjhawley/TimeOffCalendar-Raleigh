@@ -88,7 +88,7 @@ async function saveTimeOff(day, index, select) {
     }
 
     try {
-        if (!timeOffData[day]) timeOffData[day] = Array(4).fill("");
+        if (!timeOffData[day]) timeOffData[day] = Array(7).fill("");
         timeOffData[day][index] = name;
 
         await setDoc(doc(db, "timeOff", CAMPUS_ID), { mentors: timeOffData });
