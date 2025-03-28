@@ -8,6 +8,7 @@ const slotsAvailable = 3;
 const targetMonth = 4; // 0 indexing, so 4 = May, 5 = June etc
 const targetYear = 2025;
 
+// Shouldn't need to mess with anything below this line, or any other files
 let timeOffData = {};
 
 async function loadTimeOffData() {
