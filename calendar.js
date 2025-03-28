@@ -2,10 +2,12 @@ import { db, doc, setDoc, getDoc, onSnapshot, createBackup } from './firebase.js
 import { CAMPUS_ID } from './config.js';
 import { showToast, updateDayStyles } from './ui.js';
 
+// Update info here
 const mentors = ["Alice", "Bob"];
 const slotsAvailable = 3;
 const targetMonth = 4; // 0 indexing, so 4 = May, 5 = June etc
 const targetYear = 2025;
+
 let timeOffData = {};
 
 async function loadTimeOffData() {
