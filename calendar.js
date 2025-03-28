@@ -2,7 +2,7 @@ import { db, doc, setDoc, getDoc, onSnapshot, createBackup } from './firebase.js
 import { CAMPUS_ID } from './config.js';
 import { showToast, updateDayStyles } from './ui.js';
 
-const mentors = ["Mentor 1", "Mentor 2", "Mentor 3", "Mentor 4"];
+const mentors = ["Mentor 1", "Mentor 2", "Mentor 3", "Mentor 4"]; // add mentors here
 let timeOffData = {};
 const targetMonth = 4; // indexing starts at 0, so 4 = may, 5 = june etc
 const targetYear = 2025;
