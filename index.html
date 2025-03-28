@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Mentor Time-Off Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Night Shift Mentor Time-Off Calendar</h1>
+        <h2 id="campus-name"></h2>
+        <h2 id="month-name"></h2>
+    </div>
+
+    <div class="calendar-container">
+        <div id="calendar" class="calendar"></div>
+        <button onclick="generateReport()">Generate Strings</button>
+        <pre id="report"></pre>
+        <button onclick="clearAll()">Clear All</button>
+        <div id="toast" class="toast hidden"></div>
+    </div>
+
+    <script type="module">
+        import { createCalendar, generateReport, clearAll } from './calendar.js';
+    
+        window.generateReport = generateReport;
+        window.clearAll = clearAll;
+    
+        createCalendar();
+    </script>
+
+</body>
+</html>
