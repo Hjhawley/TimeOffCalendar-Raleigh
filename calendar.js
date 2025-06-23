@@ -5,7 +5,7 @@ import { showToast, updateDayStyles } from './ui.js';
 // Update info here
 const mentors = ["Ethan", "Mika", "Allison", "Jillian", "Carlos", "Chirodip", "Malak"];
 const slotsAvailable = 5;
-const targetMonth = 6; // 0 indexing, so 4 = May, 5 = June etc
+const targetMonth = 7; // 0 indexing, so 4 = May, 5 = June etc
 const targetYear = 2025;
 
 // Shouldn't need to mess with anything below this line, or any other files
